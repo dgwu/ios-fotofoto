@@ -17,6 +17,7 @@
 		91540895219E6816004D6075 /* PhotoGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91540894219E6816004D6075 /* PhotoGridViewController.swift */; };
 		91540898219E6886004D6075 /* PhotoGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91540897219E6886004D6075 /* PhotoGrid.swift */; };
 		9154089A219E68A6004D6075 /* PhotoGrid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91540899219E68A6004D6075 /* PhotoGrid.storyboard */; };
+		9154089E219E6CA6004D6075 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9154089D219E6CA6004D6075 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		91540894219E6816004D6075 /* PhotoGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridViewController.swift; sourceTree = "<group>"; };
 		91540897219E6886004D6075 /* PhotoGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGrid.swift; sourceTree = "<group>"; };
 		91540899219E68A6004D6075 /* PhotoGrid.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoGrid.storyboard; sourceTree = "<group>"; };
+		9154089B219E6CA4004D6075 /* FotoFoto.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FotoFoto.entitlements; sourceTree = "<group>"; };
+		9154089D219E6CA6004D6075 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9154089E219E6CA6004D6075 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +54,7 @@
 			children = (
 				9154087B219E6685004D6075 /* FotoFoto */,
 				9154087A219E6685004D6075 /* Products */,
+				9154089C219E6CA6004D6075 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +69,7 @@
 		9154087B219E6685004D6075 /* FotoFoto */ = {
 			isa = PBXGroup;
 			children = (
+				9154089B219E6CA4004D6075 /* FotoFoto.entitlements */,
 				91540893219E67C3004D6075 /* PhotoGrid */,
 				9154088E219E66EB004D6075 /* Helper */,
 				9154087C219E6685004D6075 /* AppDelegate.swift */,
@@ -103,6 +109,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		9154089C219E6CA6004D6075 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9154089D219E6CA6004D6075 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +149,14 @@
 				TargetAttributes = {
 					91540878219E6685004D6075 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -326,6 +348,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FotoFoto/FotoFoto.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7DQGP7DU26;
 				INFOPLIST_FILE = FotoFoto/Info.plist;
@@ -344,6 +367,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FotoFoto/FotoFoto.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7DQGP7DU26;
 				INFOPLIST_FILE = FotoFoto/Info.plist;

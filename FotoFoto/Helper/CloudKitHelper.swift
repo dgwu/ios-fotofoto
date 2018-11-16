@@ -20,19 +20,6 @@ class CloudKitHelper {
         record["title"] = story.title
         record["location"] = CLLocation(latitude: story.coordinate.latitude, longitude: story.coordinate.longitude)
         
-        //        let personRecord = CKRecord(recordType: "Person")
-        //        personRecord["name"] = "john doe"
-        //
-        //        record["person"] = CKRecord.Reference(record: personRecord, action: .deleteSelf)
-        
-        //        do {
-        //            if let imageURL = try story.thumbnail.saveToTempLocation() {
-        //                record["image"] = CKAsset(fileURL: imageURL)
-        //            }
-        //        } catch {
-        //            print("Error: \(error.localizedDescription)")
-        //        }
-        
         saveRecord(record: record)
     }
     
@@ -96,4 +83,11 @@ class CloudKitHelper {
         
         return nil
     }
+}
+
+// hapus belakangan
+struct Story {
+    let title: String
+    let coordinate: CLLocationCoordinate2D
+    let thumbnail: UIImage
 }
