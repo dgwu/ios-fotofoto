@@ -12,6 +12,11 @@
 		91540882219E6685004D6075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91540880219E6685004D6075 /* Main.storyboard */; };
 		91540884219E6686004D6075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91540883219E6686004D6075 /* Assets.xcassets */; };
 		91540887219E6686004D6075 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91540885219E6686004D6075 /* LaunchScreen.storyboard */; };
+		91540890219E670E004D6075 /* CloudKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9154088F219E670E004D6075 /* CloudKitHelper.swift */; };
+		91540892219E673E004D6075 /* CameraHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91540891219E673E004D6075 /* CameraHelper.swift */; };
+		91540895219E6816004D6075 /* PhotoGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91540894219E6816004D6075 /* PhotoGridViewController.swift */; };
+		91540898219E6886004D6075 /* PhotoGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91540897219E6886004D6075 /* PhotoGrid.swift */; };
+		9154089A219E68A6004D6075 /* PhotoGrid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91540899219E68A6004D6075 /* PhotoGrid.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		91540883219E6686004D6075 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91540886219E6686004D6075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91540888219E6686004D6075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9154088F219E670E004D6075 /* CloudKitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitHelper.swift; sourceTree = "<group>"; };
+		91540891219E673E004D6075 /* CameraHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraHelper.swift; sourceTree = "<group>"; };
+		91540894219E6816004D6075 /* PhotoGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridViewController.swift; sourceTree = "<group>"; };
+		91540897219E6886004D6075 /* PhotoGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGrid.swift; sourceTree = "<group>"; };
+		91540899219E68A6004D6075 /* PhotoGrid.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoGrid.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,8 @@
 		9154087B219E6685004D6075 /* FotoFoto */ = {
 			isa = PBXGroup;
 			children = (
+				91540893219E67C3004D6075 /* PhotoGrid */,
+				9154088E219E66EB004D6075 /* Helper */,
 				9154087C219E6685004D6075 /* AppDelegate.swift */,
 				9154087E219E6685004D6075 /* ViewController.swift */,
 				91540880219E6685004D6075 /* Main.storyboard */,
@@ -62,6 +74,33 @@
 				91540888219E6686004D6075 /* Info.plist */,
 			);
 			path = FotoFoto;
+			sourceTree = "<group>";
+		};
+		9154088E219E66EB004D6075 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				9154088F219E670E004D6075 /* CloudKitHelper.swift */,
+				91540891219E673E004D6075 /* CameraHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		91540893219E67C3004D6075 /* PhotoGrid */ = {
+			isa = PBXGroup;
+			children = (
+				91540896219E6840004D6075 /* View */,
+				91540894219E6816004D6075 /* PhotoGridViewController.swift */,
+				91540897219E6886004D6075 /* PhotoGrid.swift */,
+			);
+			path = PhotoGrid;
+			sourceTree = "<group>";
+		};
+		91540896219E6840004D6075 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				91540899219E68A6004D6075 /* PhotoGrid.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +164,7 @@
 				91540887219E6686004D6075 /* LaunchScreen.storyboard in Resources */,
 				91540884219E6686004D6075 /* Assets.xcassets in Resources */,
 				91540882219E6685004D6075 /* Main.storyboard in Resources */,
+				9154089A219E68A6004D6075 /* PhotoGrid.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +175,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91540895219E6816004D6075 /* PhotoGridViewController.swift in Sources */,
 				9154087F219E6685004D6075 /* ViewController.swift in Sources */,
+				91540898219E6886004D6075 /* PhotoGrid.swift in Sources */,
 				9154087D219E6685004D6075 /* AppDelegate.swift in Sources */,
+				91540892219E673E004D6075 /* CameraHelper.swift in Sources */,
+				91540890219E670E004D6075 /* CloudKitHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
