@@ -18,6 +18,8 @@
 		91540898219E6886004D6075 /* PhotoGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91540897219E6886004D6075 /* PhotoGrid.swift */; };
 		9154089A219E68A6004D6075 /* PhotoGrid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91540899219E68A6004D6075 /* PhotoGrid.storyboard */; };
 		9154089E219E6CA6004D6075 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9154089D219E6CA6004D6075 /* CloudKit.framework */; };
+		F3C46495219E70F5008A332D /* CaptureCamera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3C46494219E70F5008A332D /* CaptureCamera.storyboard */; };
+		F3C46498219E7354008A332D /* CaptureCameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C46497219E7354008A332D /* CaptureCameraVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		91540899219E68A6004D6075 /* PhotoGrid.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoGrid.storyboard; sourceTree = "<group>"; };
 		9154089B219E6CA4004D6075 /* FotoFoto.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FotoFoto.entitlements; sourceTree = "<group>"; };
 		9154089D219E6CA6004D6075 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		F3C46494219E70F5008A332D /* CaptureCamera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CaptureCamera.storyboard; sourceTree = "<group>"; };
+		F3C46497219E7354008A332D /* CaptureCameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureCameraVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 		91540896219E6840004D6075 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F3C46496219E710B008A332D /* Camera */,
 				91540899219E68A6004D6075 /* PhotoGrid.storyboard */,
 			);
 			path = View;
@@ -115,6 +120,15 @@
 				9154089D219E6CA6004D6075 /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3C46496219E710B008A332D /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				F3C46494219E70F5008A332D /* CaptureCamera.storyboard */,
+				F3C46497219E7354008A332D /* CaptureCameraVC.swift */,
+			);
+			path = Camera;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +199,7 @@
 			files = (
 				91540887219E6686004D6075 /* LaunchScreen.storyboard in Resources */,
 				91540884219E6686004D6075 /* Assets.xcassets in Resources */,
+				F3C46495219E70F5008A332D /* CaptureCamera.storyboard in Resources */,
 				91540882219E6685004D6075 /* Main.storyboard in Resources */,
 				9154089A219E68A6004D6075 /* PhotoGrid.storyboard in Resources */,
 			);
@@ -202,6 +217,7 @@
 				91540898219E6886004D6075 /* PhotoGrid.swift in Sources */,
 				9154087D219E6685004D6075 /* AppDelegate.swift in Sources */,
 				91540892219E673E004D6075 /* CameraHelper.swift in Sources */,
+				F3C46498219E7354008A332D /* CaptureCameraVC.swift in Sources */,
 				91540890219E670E004D6075 /* CloudKitHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,7 +365,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = FotoFoto/FotoFoto.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Daniel Gunawan (7DQGP7DU26)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 7DQGP7DU26;
 				INFOPLIST_FILE = FotoFoto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +375,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielgunawan.FotoFoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = FotoFoto;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -368,7 +386,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = FotoFoto/FotoFoto.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Daniel Gunawan (7DQGP7DU26)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 7DQGP7DU26;
 				INFOPLIST_FILE = FotoFoto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -377,6 +396,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielgunawan.FotoFoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = FotoFoto;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
